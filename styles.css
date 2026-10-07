@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fa; color: #172033; }
+header { background: #123f66; color: white; padding: 24px 7%; display:flex; justify-content:space-between; align-items:center; }
+header h1 { margin:0; font-size:32px; }
+header p { margin:6px 0 0; opacity:.85; }
+select { padding:10px 14px; border-radius:7px; border:0; }
+main { max-width:1150px; margin:auto; padding:35px 20px; }
+.notice,.message { background:white; padding:18px 20px; border-radius:10px; margin-bottom:20px; border-left:5px solid #123f66; }
+.message { border-left-color:#14804a; }
+.grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+.card { background:white; padding:24px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,.07); }
+.card h2 { margin-top:0; color:#123f66; }
+.card p { padding:8px 0; border-bottom:1px solid #edf0f4; }
+button { background:#123f66; color:white; border:0; border-radius:7px; padding:11px 16px; cursor:pointer; font-weight:bold; }
+.audit { margin-top:30px; background:white; padding:24px; border-radius:12px; }
+.audit-row { display:grid; grid-template-columns:1.5fr 1fr 1fr 2fr; gap:10px; padding:12px 0; border-bottom:1px solid #eee; }
+@media(max-width:800px){ .grid{grid-template-columns:1fr} header{flex-direction:column;align-items:flex-start;gap:15px} .audit-row{grid-template-columns:1fr} }
